@@ -1,0 +1,243 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.error_msg{
+    color: #ff0000;
+    margin-top: 10px;
+    display: none;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+}
+.clear{
+    clear: both;
+}
+
+#ajaxloading{
+    display: none;
+    width: 100%;
+    z-index: 1000;
+    height: 100vh;
+    color: #fff;
+    padding-left: 20px;
+    font-family: "Arial";
+    font-weight: Bold;
+    font-size: 40px;
+    text-align: center;
+}
+.saving span{
+    
+    font-size: 72px !important;
+}
+
+@keyframes blink {
+    /**
+     * At the start of the animation the dot
+     * has an opacity of .2
+     */
+    0% {
+      opacity: .2;
+    }
+    /**
+     * At 20% the dot is fully visible and
+     * then fades out slowly
+     */
+    20% {
+      opacity: 1;
+    }
+    /**
+     * Until it reaches an opacity of .2 and
+     * the animation can start again
+     */
+    100% {
+      opacity: .2;
+    }
+}
+
+.saving span {
+    /**
+     * Use the blink animation, which is defined above
+     */
+    animation-name: blink;
+    /**
+     * The animation should take 1.4 seconds
+     */
+    animation-duration: 1.4s;
+    /**
+     * It will repeat itself forever
+     */
+    animation-iteration-count: infinite;
+    /**
+     * This makes sure that the starting style (opacity: .2)
+     * of the animation is applied before the animation starts.
+     * Otherwise we would see a short flash or would have
+     * to set the default styling of the dots to the same
+     * as the animation. Same applies for the ending styles.
+     */
+    animation-fill-mode: both;
+
+}
+
+.saving span:nth-child(2) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .2s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .2s;
+}
+
+.saving span:nth-child(3) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .4s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .4s;
+}
+
+.barcode{
+margin-left: 220px;
+margin-top: -20;
+
+}
+
+#left_side{
+    width: 40%;
+    float: left;
+    height: 100vh;
+    color: #fff;
+    background-color: #3b78dd;
+    padding-left: 20px;
+    font-family: "Arial";
+    font-weight: Bold;
+    font-size: 50px;
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+#left_side_content,  #ajaxloading .content{
+    
+    padding-top: 150px;
+}
+
+#left_side_content span, #ajaxloading span{
+    
+    font-family: "Arial";
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+#right_side{
+    color: #666;
+    height: 100vh;
+    width: 58%;
+    float: right;
+    
+}
+
+#login-area{
+    font-family: "Arial";
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 170px;
+    margin-left: 80px;
+}
+
+.badge{
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: -10px;
+    position: fixed;
+}
+
+#login-title
+{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 55px;
+    margin-top:15px;
+}
+
+#login-title span{
+    color: #000;
+    font-weight: normal;
+}
+
+#login-control{
+    margin-top: 30px;
+    margin-left: 55px;
+}
+
+.txt, .btn{
+    width: 50%;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: lightskyblue;
+    border-style: solid;
+    margin: 5px;
+    height: 35px;
+}
+
+#username{
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+
+.btn
+{
+    background-color: #2984ef;
+    width: 25%;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+
+}
+
+
+.btn:hover
+{
+    background-color: #247bdd;
+    width: 25%;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.txt_error{
+    border-color:#ff0000 !important;
+}
+
+.error_caption{
+    color:#ff0000 !important;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#emailerror, #passerror{
+    display: none;
+}
